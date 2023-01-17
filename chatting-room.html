@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        /*background-color: #fafafa;*/
+        background-color: #C9E4CA;
+
+    }
+
+    .container {
+        padding: 0px;
+    }
+
+    .chatting-container {
+        padding: 15px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    body { color:white; }
+</style>
+
+<body>
+    <div style="height: 100vh;">
+        <div class="header" style="background-color: #87BBA2; height: 10vh;">
+            <div style="width: 40%; margin: auto;">
+                <p style="font-size: 30px; font-weight: 900; padding-top: 2vh;">채팅방 제목</p>
+            </div>
+        </div>
+        <div class="container" style="width: 40%; background-color: #C9E4CA;margin: auto; height: 80vh;">
+
+            <div class="chatting-room-container" style="height: 70vh; overflow: scroll;">
+                <div class="chatting-container">
+                    <div style="display: flex; height: max-content;">
+                        <div style="background-color: #C9E4CA; width: 15%; height: 90px;">
+                            <div class="user-image" style="width: 45px; margin: auto;">
+                                <img src="user1.png" style="border-radius: 50%;">
+                            </div>
+                        </div>
+                        <div style="max-width: 70%; display: inline;">
+                            <div style="background-color: #C9E4CA; font-size: 17px; font-weight: 800; color: #3B6064;">
+                                사용자1
+                            </div>
+                            <div style="background-color: #3B6064; padding: 9px; border-radius: 15px 15px 15px 0px; display: flex">
+                                <div style="width: 98%;">
+                                하고싶은 일모두 할수있음 좋겠네 
+                                하늘만큼 땅만큼 너무나 많은꿈들 
+                                모두모두모두다 이루게해준다네<br>
+                                신기한주머니로 이루게해준다네<br>
+                                하늘을 마음껏 날고싶어랑<br>
+                                -조아 대나무 헬리콥텅!-<br>
+                                아아앙 난 네가 정말조아 도라에-몽<br>
+                                앙앙앙 난 니가 정말조아 도라에-몽<br>
+                                </div>
+                                <div style="width: 2%; background-color: black;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chatting-container">
+                    <div style="display: flex; height: max-content; justify-content: end;">
+                        <div style="max-width: 70%; display: inline;">
+                            
+                            <div style="background-color: #87BBA2; padding: 9px; border-radius: 15px 15px 0px 15px; display: flex">
+
+                                <div style="width: 2%; background-color: black;">
+                                </div>
+                                <div style="width: 98%; padding-left: 2%;">
+                                하고싶은 일모두 할수있음 좋겠네<br>
+                                하늘만큼 땅만큼 너무나 많은꿈들<br>
+                                모두모두모두다 이루게해준다네<br>
+                                신기한주머니로 이루게해준다네<br>
+                                하늘을 마음껏 날고싶어랑<br>
+                                -조아 대나무 헬리콥텅!-<br>
+                                아아앙 난 네가 정말조아 도라에-몽<br>
+                                앙앙앙 난 니가 정말조아 도라에-몽<br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="background-color: #C9E4CA; width: 15%; height: 90px;">
+                            <div class="user-image" style="width: 45px; margin: auto;">
+                                <img src="user1.png" style="border-radius: 50%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="chatting-input-container" style="height: 10vh; background-color: #3B6064; display: flex;
+            padding:1vh 1% 1vh 1%; border-radius: 14px;">
+                <div style="width: 10%; padding-top: 6px;padding-right: 2%;">
+                    <div style="width: 40px; margin: auto;">
+                        <img src="question.png">
+                    </div>
+                </div>
+                <div style="width: 80%; background-color: white; border-radius: 5px; height: 7vh;">
+                    <input style="width: 100%; height: 8vh; color: black;">
+                </div>
+                <div style="width: 10%; padding-top: 6px;padding-left: 2%;">
+                    <div style="width: 40px; margin: auto;">
+                        <img src="send.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" style="background-color: #87BBA2; height: 10vh; width: 100%;">
+            <div style="width: 40%; margin: auto;display: flex;">
+                <div style="width: 50%;">
+                    <div style="width:40px; margin:auto;padding-top:9px;">
+                        <img src="chatroomlist.png">
+                    </div>
+                </div>
+                <div style="width: 50%;">
+                    <div style="width:40px; margin: auto;padding-top: 9px;">
+                        <img src="setting.png">    
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+</body>
+
+</html>
