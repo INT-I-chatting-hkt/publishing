@@ -35,7 +35,15 @@
         max-width: 100%;
         height: auto;
     }
-    body { color:white; }
+
+    body {
+        color: white;
+    }
+
+    button {
+        border: 0;
+        background-color: transparent;
+    }
 </style>
 
 <body>
@@ -46,66 +54,70 @@
             </div>
         </div>
         <div class="container" style="width: 40%; background-color: #C9E4CA;margin: auto; height: 80vh;">
-
             <div class="chatting-room-container" style="height: 70vh; overflow: scroll;">
-                <div class="chatting-container">
-                    <div style="display: flex; height: max-content;">
-                        <div style="background-color: #C9E4CA; width: 15%; height: 90px;">
-                            <div class="user-image" style="width: 45px; margin: auto;">
-                                <img src="user1.png" style="border-radius: 50%;">
-                            </div>
-                        </div>
-                        <div style="max-width: 70%; display: inline;">
-                            <div style="background-color: #C9E4CA; font-size: 17px; font-weight: 800; color: #3B6064;">
-                                사용자1
-                            </div>
-                            <div style="background-color: #3B6064; padding: 9px; border-radius: 15px 15px 15px 0px; display: flex">
-                                <div style="width: 98%;">
-                                하고싶은 일모두 할수있음 좋겠네 
-                                하늘만큼 땅만큼 너무나 많은꿈들 
-                                모두모두모두다 이루게해준다네<br>
-                                신기한주머니로 이루게해준다네<br>
-                                하늘을 마음껏 날고싶어랑<br>
-                                -조아 대나무 헬리콥텅!-<br>
-                                아아앙 난 네가 정말조아 도라에-몽<br>
-                                앙앙앙 난 니가 정말조아 도라에-몽<br>
-                                </div>
-                                <div style="width: 2%; background-color: black;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="chatting-container">
-                    <div style="display: flex; height: max-content; justify-content: end;">
-                        <div style="max-width: 70%; display: inline;">
-                            
-                            <div style="background-color: #87BBA2; padding: 9px; border-radius: 15px 15px 0px 15px; display: flex">
-
-                                <div style="width: 2%; background-color: black;">
+                <ul id="chatting-container-ul">
+                    <li class="chatting-container">
+                        <div style="display: flex; height: max-content;">
+                            <div style="background-color: #C9E4CA; width: 15%; height: 90px;">
+                                <div class="user-image" style="width: 45px; margin: auto;">
+                                    <img src="user1.png" style="border-radius: 50%;">
                                 </div>
-                                <div style="width: 98%; padding-left: 2%;">
-                                하고싶은 일모두 할수있음 좋겠네<br>
-                                하늘만큼 땅만큼 너무나 많은꿈들<br>
-                                모두모두모두다 이루게해준다네<br>
-                                신기한주머니로 이루게해준다네<br>
-                                하늘을 마음껏 날고싶어랑<br>
-                                -조아 대나무 헬리콥텅!-<br>
-                                아아앙 난 네가 정말조아 도라에-몽<br>
-                                앙앙앙 난 니가 정말조아 도라에-몽<br>
+                            </div>
+                            <div style="max-width: 70%; display: inline;">
+                                <div
+                                    style="background-color: #C9E4CA; font-size: 17px; font-weight: 800; color: #3B6064;">
+                                    사용자1
+                                </div>
+                                <div
+                                    style="background-color: #3B6064; padding: 9px; border-radius: 15px 15px 15px 0px; display: flex">
+                                    <div style="width: 98%;">
+                                        하고싶은 일모두 할수있음 좋겠네
+                                        하늘만큼 땅만큼 너무나 많은꿈들
+                                        모두모두모두다 이루게해준다네<br>
+                                        신기한주머니로 이루게해준다네<br>
+                                        하늘을 마음껏 날고싶어랑<br>
+                                        -조아 대나무 헬리콥텅!-<br>
+                                        아아앙 난 네가 정말조아 도라에-몽<br>
+                                        앙앙앙 난 니가 정말조아 도라에-몽<br>
+                                    </div>
+                                    <div style="width: 2%; background-color: black;">
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </li>
 
-                        <div style="background-color: #C9E4CA; width: 15%; height: 90px;">
-                            <div class="user-image" style="width: 45px; margin: auto;">
-                                <img src="user1.png" style="border-radius: 50%;">
+                    <li class="chatting-container">
+                        <div style="display: flex; height: max-content; justify-content: end;">
+                            <div style="max-width: 70%; display: inline;">
+
+                                <div
+                                    style="background-color: #87BBA2; padding: 9px; border-radius: 15px 15px 0px 15px; display: flex">
+
+                                    <div style="width: 2%; background-color: black;">
+                                    </div>
+                                    <div style="width: 98%; padding-left: 2%;">
+                                        하고싶은 일모두 할수있음 좋겠네<br>
+                                        하늘만큼 땅만큼 너무나 많은꿈들<br>
+                                        모두모두모두다 이루게해준다네<br>
+                                        신기한주머니로 이루게해준다네<br>
+                                        하늘을 마음껏 날고싶어랑<br>
+                                        -조아 대나무 헬리콥텅!-<br>
+                                        아아앙 난 네가 정말조아 도라에-몽<br>
+                                        앙앙앙 난 니가 정말조아 도라에-몽<br>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="background-color: #C9E4CA; width: 15%; height: 90px;">
+                                <div class="user-image" style="width: 45px; margin: auto;">
+                                    <img src="user1.png" style="border-radius: 50%;">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
+                    </li>
+                </ul>
             </div>
             <div class="chatting-input-container" style="height: 10vh; background-color: #3B6064; display: flex;
             padding:1vh 1% 1vh 1%; border-radius: 14px;">
@@ -118,13 +130,12 @@
                     <input style="width: 100%; height: 8vh; color: black;">
                 </div>
                 <div style="width: 10%; padding-top: 6px;padding-left: 2%;">
-                    <div style="width: 40px; margin: auto;">
+                    <button id="send-btn" style="width: 40px; margin: auto;">
                         <img src="send.png">
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>
-
         <div class="footer" style="background-color: #87BBA2; height: 10vh; width: 100%;">
             <div style="width: 40%; margin: auto;display: flex;">
                 <div style="width: 50%;">
@@ -134,12 +145,71 @@
                 </div>
                 <div style="width: 50%;">
                     <div style="width:40px; margin: auto;padding-top: 9px;">
-                        <img src="setting.png">    
+                        <img src="setting.png">
                     </div>
                 </div>
-                </div>
+            </div>
         </div>
     </div>
 </body>
+
+<script>
+    /*
+    const webSocket = new WebSocket("ws://localhost:3001");
+
+    // 웹 소켓 연결 이벤트
+    webSocket.onopen = function () {
+        alert("웹소켓 서버와 연결에 성공했습니다.");
+    };
+
+    // 웹 소켓 연결 종료
+    webSocket.onclose = function () {
+        alert("웹소켓 서버와 연결이 종료되었습니다.");
+    };
+
+    // 오류 발생
+    webSocket.onerror = function (error) {
+        console.log(error);
+    };
+    // 웹 소켓 메세지 수신
+    webSocket.onmessage = function (event) {
+        alert(event.data);
+    };
+
+    */
+    function sendMessage() {
+        const message = document.getElementById("message").value;
+        //webSocket.send(message);
+    }
+    var insertmsgToString = function (msg) {
+        let firstString = '<div style="display: flex; height: max-content; justify-content: end;">\
+                            <div style="max-width: 70%; display: inline;">\
+                                <div style="background-color: #87BBA2; padding: 9px; border-radius: 15px 15px 0px 15px; display: flex">\
+                                    <div style="width: 2%; background-color: black;">\
+                                    </div>\
+                                    <div style="width: 98%; padding-left: 2%;">';
+        let secondString = '</div>\
+                                </div>\
+                            </div>\
+                            <div style="background-color: #C9E4CA; width: 15%; height: 90px;">\
+                                <div class="user-image" style="width: 45px; margin: auto;">\
+                                    <img src="user1.png" style="border-radius: 50%;">\
+                                </div>\
+                            </div>\
+                        </div>';
+        return firstString + msg + secondString;
+    }
+    var stringToHTML = function (msg) {
+        var dom = document.createElement('li');
+        dom.innerHTML = insertmsgToString(msg);
+        return dom;
+    };
+    const btnClick = document.getElementById("send-btn");
+    btnClick.addEventListener("click", () => {
+        const ulNode = document.getElementById("chatting-container-ul");
+        const liNode = stringToHTML('hello');
+        ulNode.appendChild(liNode);
+    });
+</script>
 
 </html>
