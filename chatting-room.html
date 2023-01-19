@@ -44,6 +44,16 @@
         border: 0;
         background-color: transparent;
     }
+
+    input {
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+    }
+
+    #test::-webkit-scrollbar {
+        display: none;
+        /* 크롬, 사파리, 오페라, 엣지 */
+    }
 </style>
 
 <body>
@@ -54,7 +64,7 @@
             </div>
         </div>
         <div class="container" style="width: 40%; background-color: #C9E4CA;margin: auto; height: 80vh;">
-            <div class="chatting-room-container" style="height: 70vh; overflow: scroll;">
+            <div id="chatting-room-container" class="chatting-room-container" style="height: 70vh; overflow: scroll;">
 
                 <ul id="chatting-container-ul">
                     <li class="chatting-container">
@@ -127,7 +137,7 @@
                     </div>
                 </div>
                 <div style="width: 80%; background-color: white; border-radius: 5px; height: 7vh;">
-                    <input style="width: 100%; height: 8vh; color: black;">
+                    <input id="message-input" style="width: 100%; height: 8vh; color: black;">
                 </div>
                 <div style="width: 10%; padding-top: 6px;padding-left: 2%;">
                     <button id="send-btn" style="width: 40px; margin: auto;">
@@ -207,8 +217,14 @@
     const btnClick = document.getElementById("send-btn");
     btnClick.addEventListener("click", () => {
         const ulNode = document.getElementById("chatting-container-ul");
-        const liNode = stringToHTML('hello');
+        const messageBox = document.getElementById("message-input");
+        let message = messageBox.value;
+        messageBox.value = "";
+        const liNode = stringToHTML(message);
         ulNode.appendChild(liNode);
+
+        const scrollObj = document.getElementById("chatting-room-container");
+        scrollObj.scrollTop = scrollObj.scrollHeight;
     });
 </script>
 
