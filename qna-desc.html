@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+
+    <!-- 부가적인 테마 -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"
+    />
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body {
+      background-color: #c9e4ca;
+      color: white;
+    }
+
+    .container {
+      padding: 0px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+
+  <body>
+    <div style="height: 100vh">
+      <div class="header" style="background-color: #87bba2; height: 10vh">
+        <div style="display: flex; width: 40%; margin: auto">
+          <div style="width: 80%">
+            <p
+              style="
+                margin: 0;
+                padding-top: 2vh;
+                font-size: 15px;
+                color: #c9e4ca;
+              "
+            >
+              도라에몽 질문방
+            </p>
+            <p style="font-size: 30px; color: #364958; font-weight: 900">
+              질문 목록
+            </p>
+          </div>
+          <div
+            style="
+              width: 20%;
+              height: 10vh;
+              padding-top: 4vh;
+              display: flex;
+              /* justify-content: space-around; */
+            "
+          >
+            <img style="height: 3vh; margin-right: 20px" src="./search.png" />
+            <img style="height: 3vh" src="./write.png" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container"
+        style="
+          width: 40%;
+          background-color: #c9e4ca;
+          margin: auto;
+          height: 80vh;
+          overflow: scroll;
+        "
+      >
+        <div
+          class="question-container"
+          style="
+            margin: 15px;
+            border-radius: 20px;
+            padding-bottom: 15px;
+            background-color: #3b6064;
+          "
+        >
+          <div
+            class="question-info-container"
+            style="padding: 15px 15px 0px 15px"
+          >
+            <div class="question-info" style="padding: 5px">
+              <div class="profile-info" style="display: flex">
+                <div
+                  class="profile-image"
+                  style="width: 18%; max-width: 50px; overflow: hidden"
+                >
+                  <img
+                    src="./user1.png"
+                    style="
+                      width: 100%;
+                      border-radius: 50%;
+                      border: 2px solid white;
+                    "
+                  />
+                </div>
+                <div style="margin-left: 10px">
+                  <p
+                    style="
+                      margin: 0px;
+                      padding: 0px;
+                      font-size: 20px;
+                      font-weight: 600;
+                    "
+                  >
+                    도라에몽
+                  </p>
+                  <p
+                    style="
+                      margin: 0px;
+                      padding: 0px;
+                      font-size: 10px;
+                      font-weight: 200;
+                    "
+                  >
+                    23-01-17 12:57PM
+                  </p>
+                </div>
+              </div>
+              <p style="margin-top: 1vh; margin-bottom: 0px">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
+                iste obcaecati consequatur dolorum. Expedita aperiam sint
+                voluptatum esse id. Blanditiis reprehenderit incidunt eaque
+                doloribus nesciunt deleniti quod corrupti beatae asperiores?
+              </p>
+            </div>
+          </div>
+          <div
+            class="answer-container"
+            style="
+              margin: 15px 15px 0px 15px;
+              padding: 3px;
+              background-color: #c9e4ca;
+              border-radius: 20px;
+              color: #364958;
+            "
+          >
+            <div
+              class="main-answer-info-container"
+              style="
+                border: 2px solid #364958;
+                border-radius: 20px;
+                /* margin: 3px; */
+                padding: 3px;
+              "
+            >
+              <div class="main-answer-info" style="padding: 5px">
+                <div class="profile-info" style="display: flex">
+                  <div
+                    class="profile-image"
+                    style="width: 18%; max-width: 50px; overflow: hidden"
+                  >
+                    <img
+                      src="./user1.png"
+                      style="
+                        width: 100%;
+                        border-radius: 50%;
+                        border: 2px solid #364958;
+                      "
+                    />
+                  </div>
+                  <div style="margin-left: 10px">
+                    <p
+                      style="
+                        margin: 0px;
+                        padding: 0px;
+                        font-size: 20px;
+                        font-weight: 600;
+                      "
+                    >
+                      도라에몽
+                    </p>
+                    <p
+                      style="
+                        margin: 0px;
+                        padding: 0px;
+                        font-size: 10px;
+                        font-weight: 200;
+                      "
+                    >
+                      23-01-17 12:57PM
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-top: 1vh; margin-bottom: 0px">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam iste obcaecati consequatur dolorum. Expedita aperiam
+                  sint voluptatum esse id. Blanditiis reprehenderit incidunt
+                  eaque doloribus nesciunt deleniti quod corrupti beatae
+                  asperiores?
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="answer-info-container"
+              style="padding: 5px; padding-bottom: 0px; margin-bottom: 0px"
+            >
+              <div class="answer-info" style="padding: 5px">
+                <div class="profile-info" style="display: flex">
+                  <div
+                    class="profile-image"
+                    style="width: 18%; max-width: 50px; overflow: hidden"
+                  >
+                    <img
+                      src="./user1.png"
+                      style="
+                        width: 100%;
+                        border-radius: 50%;
+                        border: 2px solid #364958;
+                      "
+                    />
+                  </div>
+                  <div style="margin-left: 10px">
+                    <p
+                      style="
+                        margin: 0px;
+                        padding: 0px;
+                        font-size: 20px;
+                        font-weight: 600;
+                      "
+                    >
+                      도라에몽
+                    </p>
+                    <p
+                      style="
+                        margin: 0px;
+                        padding: 0px;
+                        font-size: 10px;
+                        font-weight: 200;
+                      "
+                    >
+                      23-01-17 12:57PM
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-top: 1vh; margin-bottom: 0px">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam iste obcaecati consequatur dolorum. Expedita aperiam
+                  sint voluptatum esse id. Blanditiis reprehenderit incidunt
+                  eaque doloribus nesciunt deleniti quod corrupti beatae
+                  asperiores?
+                </p>
+              </div>
+              <hr
+                style="
+                  margin: 5px;
+                  height: 1px;
+                  border: 0px;
+                  background-color: #364958;
+                "
+              />
+            </div>
+
+            <div
+              class="answer-info-container"
+              style="padding: 5px; padding-bottom: 0px; margin-bottom: 0px"
+            >
+              <div class="answer-info" style="padding: 5px">
+                <div class="profile-info" style="display: flex">
+                  <div
+                    class="profile-image"
+                    style="width: 18%; max-width: 50px; overflow: hidden"
+                  >
+                    <img
+                      src="./user1.png"
+                      style="
+                        width: 100%;
+                        border-radius: 50%;
+                        border: 2px solid #364958;
+                      "
+                    />
+                  </div>
+                  <div style="margin-left: 10px">
+                    <p
+                      style="
+                        margin: 0px;
+                        padding: 0px;
+                        font-size: 20px;
+                        font-weight: 600;
+                      "
+                    >
+                      도라에몽
+                    </p>
+                    <p
+                      style="
+                        margin: 0px;
+                        padding: 0px;
+                        font-size: 10px;
+                        font-weight: 200;
+                      "
+                    >
+                      23-01-17 12:57PM
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-top: 1vh; margin-bottom: 0px">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam iste obcaecati consequatur dolorum. Expedita aperiam
+                  sint voluptatum esse id. Blanditiis reprehenderit incidunt
+                  eaque doloribus nesciunt deleniti quod corrupti beatae
+                  asperiores?
+                </p>
+              </div>
+              <hr
+                style="
+                  margin: 5px;
+                  height: 1px;
+                  border: 0px;
+                  background-color: #364958;
+                "
+              />
+            </div>
+
+            <div
+              class="answer-info-container"
+              style="padding: 5px; padding-bottom: 0px; margin-bottom: 0px"
+            >
+              <div class="answer-info" style="padding: 5px">
+                <div class="profile-info" style="display: flex">
+                  <div
+                    class="profile-image"
+                    style="width: 18%; max-width: 50px; overflow: hidden"
+                  >
+                    <img
+                      src="./user1.png"
+                      style="
+                        width: 100%;
+                        border-radius: 50%;
+                        border: 2px solid #364958;
+                      "
+                    />
+                  </div>
+                  <div style="margin-left: 10px">
+                    <p
+                      style="
+                        margin: 0px;
+                        padding: 0px;
+                        font-size: 20px;
+                        font-weight: 600;
+                      "
+                    >
+                      도라에몽
+                    </p>
+                    <p
+                      style="
+                        margin: 0px;
+                        padding: 0px;
+                        font-size: 10px;
+                        font-weight: 200;
+                      "
+                    >
+                      23-01-17 12:57PM
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-top: 1vh; margin-bottom: 0px">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam iste obcaecati consequatur dolorum. Expedita aperiam
+                  sint voluptatum esse id. Blanditiis reprehenderit incidunt
+                  eaque doloribus nesciunt deleniti quod corrupti beatae
+                  asperiores?
+                </p>
+              </div>
+              <hr
+                style="
+                  margin: 5px;
+                  height: 1px;
+                  border: 0px;
+                  background-color: #364958;
+                "
+              />
+            </div>
+
+            <div
+              class="answer-info-container"
+              style="padding: 5px; padding-bottom: 0px; margin-bottom: 0px"
+            >
+              <div class="answer-info" style="padding: 5px">
+                <div class="profile-info" style="display: flex">
+                  <div
+                    class="profile-image"
+                    style="width: 18%; max-width: 50px; overflow: hidden"
+                  >
+                    <img
+                      src="./user1.png"
+                      style="
+                        width: 100%;
+                        border-radius: 50%;
+                        border: 2px solid #364958;
+                      "
+                    />
+                  </div>
+                  <div style="margin-left: 10px">
+                    <p
+                      style="
+                        margin: 0px;
+                        padding: 0px;
+                        font-size: 20px;
+                        font-weight: 600;
+                      "
+                    >
+                      도라에몽
+                    </p>
+                    <p
+                      style="
+                        margin: 0px;
+                        padding: 0px;
+                        font-size: 10px;
+                        font-weight: 200;
+                      "
+                    >
+                      23-01-17 12:57PM
+                    </p>
+                  </div>
+                </div>
+                <p style="margin-top: 1vh; margin-bottom: 0px">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ullam iste obcaecati consequatur dolorum. Expedita aperiam
+                  sint voluptatum esse id. Blanditiis reprehenderit incidunt
+                  eaque doloribus nesciunt deleniti quod corrupti beatae
+                  asperiores?
+                </p>
+              </div>
+              <hr
+                style="
+                  margin: 5px;
+                  height: 1px;
+                  border: 0px;
+                  background-color: #364958;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="footer"
+        style="background-color: #87bba2; height: 10vh; width: 100%"
+      >
+        <div style="width: 40%; margin: auto; display: flex">
+          <div style="width: 50%">
+            <div style="width: 40px; margin: auto; padding-top: 9px">
+              <img src="chatroomlist.png" />
+            </div>
+          </div>
+          <div style="width: 50%">
+            <div style="width: 40px; margin: auto; padding-top: 9px">
+              <img src="setting.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
