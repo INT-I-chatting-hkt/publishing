@@ -81,7 +81,7 @@
                                 </div>
                                 <div
                                     style="background-color: #3B6064; padding: 9px; border-radius: 15px 15px 15px 0px; display: flex">
-                                    <div style="width: 98%;">
+                                    <div>
                                         하고싶은 일모두 할수있음 좋겠네
                                         하늘만큼 땅만큼 너무나 많은꿈들
                                         모두모두모두다 이루게해준다네<br>
@@ -91,8 +91,6 @@
                                         아아앙 난 네가 정말조아 도라에-몽<br>
                                         앙앙앙 난 니가 정말조아 도라에-몽<br>
                                     </div>
-                                    <div style="width: 2%; background-color: black;">
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -101,14 +99,10 @@
                     <li class="chatting-container">
                         <div style="display: flex; height: max-content; justify-content: end;">
                             <div style="max-width: 70%; display: inline;">
-
                                 <div
                                     style="background-color: #87BBA2; padding: 9px; border-radius: 15px 15px 0px 15px; display: flex">
-
-                                    <div style="width: 2%; background-color: black;">
-                                    </div>
-                                    <div style="width: 98%; padding-left: 2%;">
-                                        하고싶은 일모두 할수있음 좋겠네<br>
+                                    <div>
+                                        하고싶은 일모두 할수있음 좋겠네
                                         하늘만큼 땅만큼 너무나 많은꿈들<br>
                                         모두모두모두다 이루게해준다네<br>
                                         신기한주머니로 이루게해준다네<br>
@@ -120,7 +114,7 @@
                                 </div>
                             </div>
 
-                            <div style="background-color: #C9E4CA; width: 15%; height: 90px;">
+                            <div style="background-color: #C9E4CA; width: 15%; height: 55px;">
                                 <div class="user-image" style="width: 45px; margin: auto;">
                                     <img src="user1.png" style="border-radius: 50%;">
                                 </div>
@@ -195,13 +189,11 @@
         let firstString = '<div style="display: flex; height: max-content; justify-content: end;">\
                             <div style="max-width: 70%; display: inline;">\
                                 <div style="background-color: #87BBA2; padding: 9px; border-radius: 15px 15px 0px 15px; display: flex">\
-                                    <div style="width: 2%; background-color: black;">\
-                                    </div>\
-                                    <div style="width: 98%; padding-left: 2%;">';
+                                    <div>';
         let secondString = '</div>\
                                 </div>\
                             </div>\
-                            <div style="background-color: #C9E4CA; width: 15%; height: 90px;">\
+                            <div style="background-color: #C9E4CA; width: 15%; height: 55px;">\
                                 <div class="user-image" style="width: 45px; margin: auto;">\
                                     <img src="user1.png" style="border-radius: 50%;">\
                                 </div>\
@@ -211,6 +203,7 @@
     }
     var stringToHTML = function (msg) {
         var dom = document.createElement('li');
+        dom.className = 'chatting-container';
         dom.innerHTML = insertmsgToString(msg);
         return dom;
     };
